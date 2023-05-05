@@ -1,4 +1,7 @@
-project description abstract
+project description abstract      * free to use code
+
+ques: can it work on my laptop
+ans : yes definately. just install and setup jdbc connector and mysql. create the required table. in Real.java change username password and database name and you are good to go.
 
 Aarogya : DBMS BASED patient registration system which helps to create, update and modify patient database for mirza health Centre.
 
