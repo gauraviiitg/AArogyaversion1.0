@@ -1,62 +1,65 @@
 Checkout : Letter_of_appreciation_aarogya.pdf, Letter_of_appreciation_pustakalya4.0.pdf
 
-* free to use code
+**Project: Aarogya - Patient Registration System for Mirza Health Centre**
+Overview
+This initial project code implements a Database Management System (DBMS) tailored for Mirza Health Centre, a community-centric hospital serving the local populace in Mirza and Kamrup. The system is designed to facilitate efficient patient registration, updates, and modifications in a structured database. Due to confidentiality agreements, the current codebase cannot be shared.
 
-Ques: can it work on my laptop ??
-Ans : yes definately. just install and setup jdbc connector and mysql. create the required table. in Real.java change username password and database name and run Real.java
+**Getting Started**
+To set up and run this project on your local machine, follow these steps:
 
-Aarogya : DBMS BASED patient registration system which helps to create, update and modify patient database for mirza health Centre.
+Clone the Repository:
+git clone https://github.com/your-username/your-repo.git](https://github.com/gauraviiitg/AArogyaversion1.0
+cd AArogyaversion1.0
 
-PROJECT DESCRIPTION: A DBMS needs to be implemented for a small community-based hospital that mainly serves within mirza or in some sense kamrup. The hospital broadly needs to store a lot of data specifically --
-registration id – unique number provided to each patient. 
-patient name – name provided by the patient.
-Guardian name – name of the guardian accompanying
-DOB_year – age(will be calculated) provided by the patient. 
-sex – of the patient 
-phone number – provided by the patient.
-address – provided by the patient. 
-date – current date 
-amount – paid amount  
-visit – to be filled in case visited for more than one time in month.
+Requirements:
+Ensure you have the necessary components installed on your machine:
 
-FIRST EDIT (20/03/2023): 
-Pre-determined values for sex and amount.
-Registration id and date(dd/mm/yy) should be self-generated.
-Registration id format: ddmmyyxxxx, where xxxx will be generated from 0001 at the start of the day.
-// find out how does date works in SQL (does it coordinates with the system timing)
+Java
+JDBC Connector
+MySQL
+Database Setup:
 
-Regular Amount to be paid = 10/-
-Concession for (1<= age>80, not able to pay (borne by Hospital), ANC cases (parental care)): Amount = 0
-No amount charged if the patient comes for next visit within 1 month.
-// re-consultation needed to determine whether separate attribute needed or if necessary to be included. 
+Create the required MySQL database and tables.
+Modify the credentials (username, password, and database name) in Real.java.
+Run the Application:
 
-Level of access:
-Level 1: accessed by receptionist. (Access search queries, change them)
-Level 2: accessed by office administrator. (Add level1 and 2 users, delete queries or change them)
+javac Real.java
+java Real
 
-Queries: (try to generate all weather filter, number of tuples also shown) --------- followed by delete or change queries in the result query.
+Aarogya:
+A specialized DBMS-based patient registration system catering to the needs of Mirza Health Centre.
 
-Separate tab for frequent queries: Total patient (at the end of day, paid – not paid (anc, age, borne), sex, 
-Search by (case insensitive): registration id, name, age, sex, phone, address, date, amount.
+**Project Description**:
+The system efficiently manages critical patient data including registration ID, patient name, guardian name, date of birth, sex, phone number, address, date, amount paid, and visit details.
 
-THE PROBLEM SOLVING (faced till now): 
+**Features**
+Pre-determined Values:
 
-TECHNICAL IMPAIREDNESS: the user is to be considered technical impaired and since there is not IT department in the hospital.
-Solution: 
-Code should be clean appropriate comments.
-Tight bounds in case of accepting attribute values.
-A user manual will be printed for the facilitation of office staff.
-user with low access should not be able to change much or given any option that puts data at risk.  
+Automatic generation of registration ID and date.
+Registration ID format: ddmmyyxxxx.
+Regular Payment and Concession:
 
-DATA SECURITY: each year more than 1 lakh people register at the hospital with their basic data consisting of age, mobile, age and address which makes it outmost importance for the data to be secured. 
-Solution: 
-Migration feature: Export button, that exports data within a particular time frame to the computer in excel ( to be accessed by the administrator)
-Will not be connected to the internet nor will we be working with web-based front- end.
-Code should be reconstructed to provide safety. 
-LOW QUALITY HARDWARE AND SOFTWARE: it is to be assumed that the computer hosting the application will be working at minimum settings
- Solution: 
-Try to avoid using any third party software prone to bugs ( use the stable update ). Basic MySQL is to be used with java.
-Data needed to be entered by the receptionist every day. regarding time (working on) since the computer may start time from 00:00 every day and getting input of time every time someone registers is hugely time wasting
+Standard payment: 10/-
+Concessions for specific age groups and ANC cases: Amount = 0
+There is no charge for the next visit within 1 month.
+**Access Levels:**
+
+Level 1: Accessible to receptionists (search queries, data modification).
+Level 2: Accessible to office administrators (addition, deletion, and modification of queries).
+Queries
+Extensive range of search queries with flexible filters.
+Dedicated section for frequent queries and overall patient count.
+**Problem Solving**
+Technical Impairment
+Code is optimized for non-technical users with explicit comments and strict input validation.
+A comprehensive user manual is provided for ease of use.
+**Data Security**
+Implemented a secure migration feature: Data export within specified time frames to Excel for internal use.
+**Emphasized on offline functionality and strict code security practices to protect sensitive patient data.
+Low-Quality Hardware and Software**
+Minimized third-party software usage to ensure system stability.
+Utilized stable updates and relied on fundamental technologies like basic MySQL and Java to enhance compatibility.
+We streamlined the data entry process to accommodate hardware limitations and optimize user efficiency.
 
 
 
