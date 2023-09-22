@@ -1,4 +1,5 @@
-Checkout : Letter_of_appreciation_aarogya.pdf, Letter_of_appreciation_pustakalya4.0.pdf
+Checkout : Letter_of_appreciation_aarogya.pdf
+           Letter_of_appreciation_pustakalya4.0.pdf
 
 **Project: Aarogya - Patient Registration System for Mirza Health Centre**
 Overview
